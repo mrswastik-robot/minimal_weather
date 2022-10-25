@@ -1,0 +1,64 @@
+<%- include("weather-header.ejs") -%> 
+
+<!-- <img class="climateimg" src="/images/climate.jpg" style="height: 100vh;"> -->
+
+
+
+<section>
+    <div class="container-fluid">
+      <div class="box">
+        <div class="badtimes">
+            <p><%= times %></p>
+        </div>
+        <div class="baddays">
+            <p><%= days %></p>
+
+        </div>    
+        <hr size="" width="" color="#fff">
+    </br>
+       <h1><%= cities %></h1>
+
+       <%  infos.forEach(function(info){ %>
+        <h1><%=info.county%></h1>
+        <h1><%=info.temp%></h1>
+
+        <% infos.length = 0; %>
+
+        <% }) %>
+
+
+           
+
+      </div>
+    </div>
+</section>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include("footer.ejs") -%>

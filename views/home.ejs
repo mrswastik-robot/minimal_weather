@@ -1,0 +1,59 @@
+<%- include("header.ejs") -%> 
+    
+    <!-- upar to nav ka ho gaya ab baari maine homepage k contents ki -->
+
+    <div class="container-fluid main-header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <!-- left side division on homepage aur iske uapr wale jo row aur col-10 the wo sirf issliye the taaki nav aur neeche ka content align rahe ek hi verticle line pr -->
+                    <div class="col-md-6 col-12 left-home">
+                        <p>Welcome to my weather app.</p>
+                        <h1>Get The Latest <span class="text-clr">Weather</span> Info Of Your City.</h1>
+                        <form action="/" method="post">
+                          <input type="text" name="cityname" value="" placeholder="City Name...">
+                          <button type="submit" name="submit">Check Now...</button> 
+                        </form>  
+                        
+                    </div>
+                    
+                    <div class="col-md-6 col-12 right-home">
+
+                        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="/images/bg-2-cropped.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item" data-bs-interval="2000">
+                                <img src="/images/bg-3.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/images/bg-1.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="/images/bg-4.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>     
+   
+
+
+
+<%- include("footer.ejs") -%>

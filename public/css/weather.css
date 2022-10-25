@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"",serif;
+   }
+   
+   :root{
+     --main-bg:#1e272e;
+     --main-color:#0097e6;
+   }
+   
+   body{
+      height: 100vh;
+       display:flex;
+       flex-direction:column;
+   }
+   
+   .main_menu{
+        background-color: var(--main-bg) 
+   }
+   
+   .navbar{
+       
+        background-color: var(--main-bg); 
+       padding: 2rem;
+       font-size: 1.5rem;
+   }
+   
+   .navbar a{
+       color: #0097e6;
+   }
+   
+   
+   .navbar-nav li{
+       margin-left: 2rem;
+   }
+
+   footer{
+    width: 100%;
+    background-color: #1e272e;
+    color: #fff;
+    text-align: center;
+    color: #0097e6;
+    margin-top: auto;
+}
+
+footer p{
+    margin-top: 2px;
+}
+
+
+body{
+    background: url("/images/climate.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+}
+
+.box{
+    height: auto;
+    width: 50%;
+    
+    background-color: #1e272e;
+    border-radius: 20px;
+    color: #fff;
+    position: absolute;
+    right: 25%;
+    top: 45%;
+    padding: 2%;
+}
+
+.badtimes{
+    position: absolute;
+    right: 7%;
+    top: 25%;
+}
+
+.baddays{
+    position: relative;
+    left: 3%;
+    top: 3%;
+    
+}
+
+@media (max-width: 768px){
+    .badtimes{
+        top: 13%;
+
+    }
+}
